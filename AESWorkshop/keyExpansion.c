@@ -30,16 +30,11 @@ void expandKey(unsigned char key[4][4] , unsigned char expandedKey[4][44])
         for (int j = 0; j < 4; j++) {
             colWPrevI[j][0] = expandedKey[j][i-1];
         }
-        printMatrix_one(colWPrevI);
-        printMatrix_one(colWPrevIFour);
         if (i%4  == 0) {
             //we have a multiple of 4
             rotateUpSide(colWPrevI);
-            printMatrix_one(colWPrevI);
             byteSub_key(colWPrevI);
-            printMatrix_one(colWPrevI);
             xorWithRcon(colWPrevI, (i/4) - 1);
-            printMatrix_one(colWPrevI);
         }
         unsigned char temp [4][1];
         xorColumns(colWPrevI, colWPrevIFour, temp);

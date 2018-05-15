@@ -13,4 +13,5 @@
 
 void mix_col(unsigned char state[4][4]);
 
+void inv_mix_col(unsigned char state[4][4]);
 #endif /* mixColumn_h */

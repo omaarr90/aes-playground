@@ -12,5 +12,4 @@
 #include <stdio.h>
 
 void addRoundKey(unsigned char state[4][4], unsigned char roundKey[4][4]);
-
 #endif /* roundKey_h */

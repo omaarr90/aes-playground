@@ -35,7 +35,20 @@ int main(int argc, const char * argv[]) {
         key_state[i%4][i/4] = key[i];
     }
     
+    printf("\n--------- ENCRYOTING ------\n");
+    printf("\n--------- original message ------\n");
+    printMatrix(state);
     aes_encrypt(state, key_state);
+    printf("\n--------- CIPHER TEXT ------\n");
+    printMatrix(state);
     
+    
+    printf("\n--------- DECRYOTING ------\n");
+    printf("\n--------- CIPHER TEXT ------\n");
+    printMatrix(state);
+    aes_decrypt(state, key_state);
+    printf("\n--------- original message ------\n");
+    printMatrix(state);
+
     return 0;
 }
