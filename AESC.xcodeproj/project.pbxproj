@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003E664420AC377E00C83A5C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 003E664320AC377E00C83A5C /* main.c */; };
+		4CF2B09620AC4C160063EDA1 /* aesEncrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B08920AC4C140063EDA1 /* aesEncrypt.c */; };
+		4CF2B09720AC4C160063EDA1 /* byteSub.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B08A20AC4C140063EDA1 /* byteSub.c */; };
+		4CF2B09820AC4C160063EDA1 /* mixColumn.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B08B20AC4C140063EDA1 /* mixColumn.c */; };
+		4CF2B09920AC4C160063EDA1 /* rowShift.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B08E20AC4C150063EDA1 /* rowShift.c */; };
+		4CF2B09A20AC4C160063EDA1 /* roundKey.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B09020AC4C150063EDA1 /* roundKey.c */; };
+		4CF2B09B20AC4C160063EDA1 /* keyExpansion.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B09220AC4C150063EDA1 /* keyExpansion.c */; };
+		4CF2B09E20AC4C570063EDA1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B09D20AC4C570063EDA1 /* main.c */; };
+		4CF2B0A120AC5CEA0063EDA1 /* constants.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2B0A020AC5CEA0063EDA1 /* constants.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +31,21 @@
 
 /* Begin PBXFileReference section */
 		003E664020AC377E00C83A5C /* AESC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AESC; sourceTree = BUILT_PRODUCTS_DIR; };
-		003E664320AC377E00C83A5C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4CF2B08920AC4C140063EDA1 /* aesEncrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aesEncrypt.c; sourceTree = "<group>"; };
+		4CF2B08A20AC4C140063EDA1 /* byteSub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = byteSub.c; sourceTree = "<group>"; };
+		4CF2B08B20AC4C140063EDA1 /* mixColumn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mixColumn.c; sourceTree = "<group>"; };
+		4CF2B08C20AC4C150063EDA1 /* roundKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roundKey.h; sourceTree = "<group>"; };
+		4CF2B08D20AC4C150063EDA1 /* aesEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesEncrypt.h; sourceTree = "<group>"; };
+		4CF2B08E20AC4C150063EDA1 /* rowShift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rowShift.c; sourceTree = "<group>"; };
+		4CF2B08F20AC4C150063EDA1 /* keyExpansion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyExpansion.h; sourceTree = "<group>"; };
+		4CF2B09020AC4C150063EDA1 /* roundKey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = roundKey.c; sourceTree = "<group>"; };
+		4CF2B09120AC4C150063EDA1 /* rowShift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rowShift.h; sourceTree = "<group>"; };
+		4CF2B09220AC4C150063EDA1 /* keyExpansion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keyExpansion.c; sourceTree = "<group>"; };
+		4CF2B09320AC4C160063EDA1 /* mixColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mixColumn.h; sourceTree = "<group>"; };
+		4CF2B09520AC4C160063EDA1 /* byteSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byteSub.h; sourceTree = "<group>"; };
+		4CF2B09D20AC4C570063EDA1 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4CF2B09F20AC5CEA0063EDA1 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		4CF2B0A020AC5CEA0063EDA1 /* constants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = constants.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +78,21 @@
 		003E664220AC377E00C83A5C /* AESC */ = {
 			isa = PBXGroup;
 			children = (
-				003E664320AC377E00C83A5C /* main.c */,
+				4CF2B09D20AC4C570063EDA1 /* main.c */,
+				4CF2B08920AC4C140063EDA1 /* aesEncrypt.c */,
+				4CF2B08D20AC4C150063EDA1 /* aesEncrypt.h */,
+				4CF2B08A20AC4C140063EDA1 /* byteSub.c */,
+				4CF2B09520AC4C160063EDA1 /* byteSub.h */,
+				4CF2B09220AC4C150063EDA1 /* keyExpansion.c */,
+				4CF2B08F20AC4C150063EDA1 /* keyExpansion.h */,
+				4CF2B08B20AC4C140063EDA1 /* mixColumn.c */,
+				4CF2B09320AC4C160063EDA1 /* mixColumn.h */,
+				4CF2B09020AC4C150063EDA1 /* roundKey.c */,
+				4CF2B08C20AC4C150063EDA1 /* roundKey.h */,
+				4CF2B08E20AC4C150063EDA1 /* rowShift.c */,
+				4CF2B09120AC4C150063EDA1 /* rowShift.h */,
+				4CF2B09F20AC5CEA0063EDA1 /* constants.h */,
+				4CF2B0A020AC5CEA0063EDA1 /* constants.c */,
 			);
 			path = AESC;
 			sourceTree = "<group>";
@@ -119,7 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003E664420AC377E00C83A5C /* main.c in Sources */,
+				4CF2B09920AC4C160063EDA1 /* rowShift.c in Sources */,
+				4CF2B0A120AC5CEA0063EDA1 /* constants.c in Sources */,
+				4CF2B09B20AC4C160063EDA1 /* keyExpansion.c in Sources */,
+				4CF2B09820AC4C160063EDA1 /* mixColumn.c in Sources */,
+				4CF2B09620AC4C160063EDA1 /* aesEncrypt.c in Sources */,
+				4CF2B09A20AC4C160063EDA1 /* roundKey.c in Sources */,
+				4CF2B09720AC4C160063EDA1 /* byteSub.c in Sources */,
+				4CF2B09E20AC4C570063EDA1 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
