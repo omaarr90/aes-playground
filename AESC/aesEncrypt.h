@@ -18,4 +18,7 @@ void aes_decrypt(unsigned char message[4][4], unsigned char key[4][4]);
 void printMatrix(unsigned char mat[4][4]);
 void printMatrix_large(unsigned char mat[4][44]);
 
+int getNumberOfBytes();
+int getKeySize();
+
 #endif /* aesEncrypt_h */
